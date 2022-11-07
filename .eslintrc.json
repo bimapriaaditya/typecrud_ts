@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true,
+        "node": true,
         "es2021": true
     },
     "extends": [
@@ -9,16 +9,28 @@
         "prettier/typescript-eslint",
         "plugin:prettier/recommended"
     ],
-    "overrides": [
-    ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "overrides": [
+    ],
     "rules": {
         "@typescript-eslint/camelcase": "off",
         "prettier/prettier": "warn",
         "camelcase": "off",
-        "no-useless-constructor": "off"
+        "no-useless-constructor": "off",
+        "import/extension": [
+            "off",
+            "ignorePackages",
+            {
+                "ts": "never"
+            }
+        ]
     }
 }

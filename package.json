@@ -4,7 +4,7 @@
   "description": "Simple CRUD using Node.js and TypeScript.JS",
   "main": "index.js",
   "scripts": {
-    "watch": "ts-node --transpile-only --ignore node_modules src/server.ts"
+    "dev": "ts-node --transpile-only --ignore node_modules src/server.ts"
   },
   "repository": {
     "type": "git",
